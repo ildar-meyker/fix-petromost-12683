@@ -75,7 +75,7 @@ const SliderBasket = {
 
 		this._$root.find(".slider-basket__list").slick({
 			infinite: false,
-			slidesToShow: 2,
+			slidesToShow: 1,
 			slidesToScroll: 1,
 			prevArrow: this._$root.find(".slider-basket__prev"),
 			nextArrow: this._$root.find(".slider-basket__next"),

@@ -1,7 +1,7 @@
 .slider-basket {
 	margin-top: 20px;
 
-	> * {
+	* {
 		box-sizing: border-box !important;
 	}
 
@@ -13,18 +13,14 @@
 
 	&__wrapper {
 		position: relative;
-		padding: 0 30px;
+		padding: 0 35px;
 	}
 
-	&__item {
-		width: 50%;
+	&__slide {
+		display: none;
 
-		&:nth-child(-n + 2) {
-			display: none;
-		}
-
-		.basket-recommendation__item {
-			width: auto;
+		&:first-child {
+			display: block;
 		}
 	}
 
@@ -34,8 +30,8 @@
 		z-index: 10;
 		top: 50%;
 		transform: translateY(-50%);
-		width: 3em;
-		height: 3em;
+		width: 2.2em;
+		height: 2.2em;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -60,7 +56,54 @@
 		right: 0;
 	}
 
+	&__group {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+	}
+
+	&__item {
+		flex: 0 0 auto;
+		width: 50%;
+		padding: 10px 10px;
+		display: flex;
+	}
+
+	&__image {
+		flex: 0 0 auto;
+		width: 45px;
+		height: 45px;
+	}
+
+	&__desc {
+		flex: 0 0 auto;
+		width: calc(100% - 45px);
+		padding-left: 15px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__name {
+		margin-bottom: auto;
+		font-size: 13px;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	&__ctrl {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.slick-slide {
 		display: block !important;
+	}
+
+	.stepper {
+		margin-left: 0 !important;
 	}
 }

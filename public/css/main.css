@@ -49,7 +49,10 @@
   .slider-basket__image {
     flex: 0 0 auto;
     width: 45px;
-    height: 45px; }
+    height: 45px;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
   .slider-basket__desc {
     flex: 0 0 auto;
     width: calc(100% - 45px);
